@@ -152,12 +152,11 @@ public class ComplexExamples {
             int secondNumber = result - firstNumber;
             if (set.contains(secondNumber)) {
                 isResult= ("[" + secondNumber + ", " + firstNumber + "]");
-                break;
+                return isResult;
             }
             set.add(firstNumber);
         }
 
-        if(isResult!=null) return isResult;
         return "There is no such pair";
     }
 
